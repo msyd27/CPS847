@@ -1,0 +1,23 @@
+name: deploy code
+
+on:
+  push:
+    branches:
+      - stage
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to server
+      uses: appleboy/ssh-action@master
+      with:
+        host: moon.scs.torontomu.ca
+        username: avm
+        password: ${{ secrets.SSH_PASSWORD }}
+        script: |
+          scp -r index.html avm@moon.scs.torontomu.ca:/home/avm/courses/cps847/<musyed>/index.html
