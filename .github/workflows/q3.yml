@@ -20,4 +20,4 @@ jobs:
         username: musyed
         password: ${{ secrets.PASSWORD_SSH }}
         script: |
-          scp -r index.html avm@moon.scs.torontomu.ca:/home/avm/courses/cps847/<musyed>/index.html
+          scp -r index.html musyed@moon.scs.torontomu.ca:/home/musyed/courses/cps847/<musyed>/index.html
