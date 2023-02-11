@@ -1,6 +1,6 @@
 name: deploy code
 
-on: ['push']
+on: [push]
 
 jobs:
   deploy:
