@@ -17,7 +17,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: moon.scs.torontomu.ca
-        username: avm
-        password: ${{ secrets.SSH_PASSWORD }}
+        username: musyed
+        password: ${{ secrets.PASSWORD_SSH }}
         script: |
           scp -r index.html avm@moon.scs.torontomu.ca:/home/avm/courses/cps847/<musyed>/index.html
