@@ -25,4 +25,4 @@ jobs:
         password: ${{ secrets.PASSWORD_SSH }}
         port: ${{ secrets.PORT}}
         source: "index.html"
-        target: "home/avm/courses/cps847/musyed"
+        target: "home/avm/courses/cps847/secrets.USERNAME"
