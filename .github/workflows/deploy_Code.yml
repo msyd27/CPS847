@@ -23,6 +23,6 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD_SSH }}
-        port: 22
-        source: "index.html,.github/workflows/pylint.yml"
+        port: ${{ secrets.PORT}}
+        source: "index.html"
         target: "home/avm/courses/cps847/musyed"
